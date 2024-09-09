@@ -79,6 +79,11 @@ function App() {
         onChange={handleChange}
         placeholder="Enter text here..."
       />
+      <textarea
+        value={outputText}
+        readOnly
+        placeholder="Transformed text will appear here..."
+      />
       <div className="buttons">
         <button onClick={toSentenceCase}>Sentence Case</button>
         <button onClick={toLowerCase}>Lower Case</button>
@@ -91,11 +96,7 @@ function App() {
         <button onClick={copyToClipboard}>Copy to Clipboard</button>
         <button onClick={clearText}>Clear</button>
       </div>
-      <textarea
-        value={outputText}
-        readOnly
-        placeholder="Transformed text will appear here..."
-      />
+      
     </div>
   );
 }
